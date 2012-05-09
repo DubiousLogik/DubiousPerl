@@ -1,0 +1,17 @@
+lumia
+iphone
+flowers
+ford f-150
+zumba
+nokia
+nokian
+zantac
+esurance
+alaska air
+expedia
+hertz
+starbucks
+nordstroms
+wireless router
+	
+^
