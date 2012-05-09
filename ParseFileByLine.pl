@@ -3,7 +3,7 @@
 #  Script to get the first N rows of a very large file for easy analysis
 #
 #  Author:       robbie devine
-#  Keywords:     string token array
+#  Keywords:     string token array 
 #--------------------------------------------------------------------
 
 use encoding 'utf8';
