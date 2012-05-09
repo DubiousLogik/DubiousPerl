@@ -10,7 +10,7 @@ my $totalCharCount = 0;
 my $urlCharCount = 0;
 my $lineCount = 0;
 my $urlCount = 0;
-my $pattern = "r\.domain\.com"; #use for bing
+my $pattern = "r\.msn\.com"; #use for bing
 #my $pattern = "google\.com\/aclk";
 
 open(TEMP, ">temp.txt");
