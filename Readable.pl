@@ -2,7 +2,7 @@
 # and adds line breaks and tabs to make more readable
 # Assumes input file and program are all in same (local) directory
 # Quick and dirty, no error checking to speak of
-# Rob Devine
+# Robbie Devine
 # 01 May 2012
 
 print "Starting Readable.pl\n";

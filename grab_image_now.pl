@@ -1,7 +1,8 @@
 #!/usr/bin/perl -w
 # grab_image_now.pl
-# rjdevine@mindspring.com
+# robbie devine
 # 09 Oct 2004
+# grabs an image using lwp, saves to file without parsing it
 
 use strict;
 use LWP 5.64;

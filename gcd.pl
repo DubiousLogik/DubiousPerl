@@ -4,6 +4,7 @@
 #  author:  rob devine
 #  date:  26 apr 2012
 #---------------------
+# finds Greatest common denominator of 2 integers
 
 use Time::HiRes 
 Time::HiRes::usleep ($microseconds);

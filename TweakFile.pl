@@ -1,6 +1,7 @@
-## Reads a text file, alters some characters, and outputs the data to a new file
-## Rob Devine
-## 30 April 2012
+# Reads a text file, alters some characters, and outputs the data to a new file
+# Robbie Devine
+# 30 April 2012
+# starter template for modifying files quickly
 
 $filename = "ga.js";
 
@@ -15,7 +16,7 @@ open(TEMP, "<$filename");
   while(<TEMP>) {
     $outputText = $_; 
     
-    $filename =~ s/;/;\\n/;
+    $outputText =~ s/;/;\\n/;
     
     $rowcount++; 
     print SUMM $outputText;

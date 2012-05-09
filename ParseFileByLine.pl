@@ -2,7 +2,7 @@
 #  ParseFileByLine.pl
 #  Script to get the first N rows of a very large file for easy analysis
 #
-#  Author:       rdevine
+#  Author:       robbie devine
 #  Keywords:     string token array
 #--------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ $revenueColumn = 6;
 $descriptionColumn = 7;
 $bizNameColumn = 8;
 
-my $source = "C:\\Users\\Public\\Documents\\Gadfly Data\\BRMDNBExport.txt";
+my $source = "C:\\Users\\Public\\Documents\\Gadfly Data\\DBExport.txt";
 my $target = "C:\\Users\\Public\\Documents\\Gadfly Data\\DandBurls.txt";
 
 $t0 = time();

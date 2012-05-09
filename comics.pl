@@ -2,6 +2,7 @@
 # comics.pl
 # rdevine
 # 05 Feb 2005
+# builds html page with pointers to daily comic images
 
 use strict;
 use LWP 5.64;

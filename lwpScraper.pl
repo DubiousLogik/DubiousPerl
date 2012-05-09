@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------
 #!/usr/bin/perl
 # lwpScraper.pl
-# rdevine
+# robbie devine
 # 03 May 2012
 # --------------------------------------------------------------------------------------------
 # Notes:  this is written quick and dirty, data is piped thru files

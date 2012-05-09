@@ -2,7 +2,7 @@
 #  parseOutput.pl
 #  Script to parse web crawl results
 #
-#  Author:       rdevine
+#  Author:       robbie devine
 #--------------------------------------------------------------------
 
 use encoding 'utf8';
@@ -12,8 +12,8 @@ $j = 0; # line counter
 $line = "";
 $debugLimit = 10000000;  #limit rows processed for debugging
 
-my $source = "C:\\Users\\rdevine\\Documents\\Gadfly Data\\Stage 2.1\\output more urls.txt";
-my $target = "C:\\Users\\rdevine\\Documents\\Gadfly Data\\Stage 2.1\\Filtered Output more Url sample.txt";
+my $source = "C:\\Users\\Stage 2.1\\output more urls.txt";
+my $target = "C:\\Users\\Stage 2.1\\Filtered Output more Url sample.txt";
 
 $t0 = time();
 print "\nProcessing...\n";
