@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #---------------------
 #  PROGRAM:  gcd.pl  
-#  author:  rob devine
+#  author:  robbie devine
 #  date:  26 apr 2012
 #---------------------
 # finds Greatest common denominator of 2 integers

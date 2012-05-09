@@ -1,5 +1,5 @@
-# counts bytes of click urls vs overall page weight
-# Rob Devine
+# counts bytes of click urls vs overall page weight for common search engine pages
+# Robbie Devine
 # 02 May 2012
 
 #print "Starting clickurl.pl\n"; #debugging

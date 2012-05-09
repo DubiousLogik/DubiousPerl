@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 # comics.pl
-# rdevine
+# robbie devine
 # 05 Feb 2005
 # builds html page with pointers to daily comic images
 
