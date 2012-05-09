@@ -16,8 +16,8 @@ $revenueColumn = 6;
 $descriptionColumn = 7;
 $bizNameColumn = 8;
 
-my $source = "C:\\Users\\Public\\Documents\\Gadfly Data\\DBExport.txt";
-my $target = "C:\\Users\\Public\\Documents\\Gadfly Data\\DandBurls.txt";
+my $source = "C:\\Users\\Public\\Documents\\DBExport.txt";
+my $target = "C:\\Users\\Public\\Documents\\DandBurls.txt";
 
 $t0 = time();
 print "\nProcessing...\n";
