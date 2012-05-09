@@ -5,12 +5,12 @@
 #print "Starting clickurl.pl\n"; #debugging
 
 my $outputText = "";
-my $filename = "bing1.txt";  #put input filename here
+my $filename = "zing1.txt";  #put input filename here
 my $totalCharCount = 0;
 my $urlCharCount = 0;
 my $lineCount = 0;
 my $urlCount = 0;
-my $pattern = "r\.msn\.com"; #use for bing
+my $pattern = "r\.domain\.com"; #use for bing
 #my $pattern = "google\.com\/aclk";
 
 open(TEMP, ">temp.txt");
