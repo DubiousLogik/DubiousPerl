@@ -2,7 +2,7 @@
 #  parseOutput.pl
 #  Script to parse web crawl results
 #
-#  Author:       robbie devine 
+#  Author:       robbie devine  
 #--------------------------------------------------------------------
 
 use encoding 'utf8';

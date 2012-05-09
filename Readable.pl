@@ -4,7 +4,7 @@
 # Quick and dirty, no error checking to speak of
 # Robbie Devine
 # 01 May 2012
-
+ 
 print "Starting Readable.pl\n";
 
 my $outputText = "";

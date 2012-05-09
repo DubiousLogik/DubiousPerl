@@ -7,7 +7,7 @@ $filename = "ga.js";
 
 print "Starting TweakFile.pl";
 
-open(SUMM, ">Tweaked.txt");
+open(SUMM, ">Tweaked.txt"); 
 $outputText = "";
 $rowcount = 0;
 
