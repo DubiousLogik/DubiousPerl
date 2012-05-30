@@ -1,8 +1,8 @@
-# parseMB.pl
-# Rob Devine
-# 18 May 2012
+# parseFileWithCounts.pl
+# Robbie Devine
+# 29 May 2012
 
-print "Starting parseMB.pl -------------------- \n";
+print "Starting parseFileWithCounts.pl -------------------- \n";
 
 my $outputText = "";
 my $debugLimit = 1000000000000000;
@@ -11,11 +11,11 @@ my $lineCount = 0;
 my @words;
 my $word = "";
 my $i = 0;
-my $r = 0;  #RCF018 counter
-my $s = 0;  #YSYNEX counter
+my $r = 0;  #STRING1 counter
+my $s = 0;  #STRING2 counter
 my $c2 = 0;
 
-my $filename = "MB1.txt";  #put input filename here
+my $filename = "myFile1.txt";  #put input filename here
 #my $filename = $ARGV[0];  #use for command line input
 
 my $outFile = $filename;
@@ -33,11 +33,11 @@ while (defined ($line = <SRC>) && ($lineCount < $debugLimit)) {
 	#for (@words) { print "word " . $i . " : " . @words[$i] . "\n"; $i++; }
 	#if (@words[3] == 0) { $c++; }
 	$word = @words[2];
-	$word =~ s/(\S*)(&bktid=YBucket%3a)(\w+)\&(\S+)\=(\S+)/$3/;
+	$word =~ s/(\S*)(&name=compoundValue%3a)(\w+)\&(\S+)\=(\S+)/$3/;
 	#print "Bucket " . $word . "\n";
-	if ($word =~ m/RCF018/) { 
+	if ($word =~ m/STRING1/) { 
 		$r++; 
-	} elsif ($word =~ m/YSYNEX/) {
+	} elsif ($word =~ m/STRING2/) {
 		$s++;
 	} elsif ($word) {
 		#print "non matched : " . $word . "\n";
@@ -56,4 +56,4 @@ print "counter s = " . $s . "\n";
 print "other = " . $c2 . "\n";
 print "total r+s+other = " . ($r+$s+$c2) . "\n";
 
-print "Exiting parseMB.pl -------------------- \n";
+print "Exiting parseFileWithCounts.pl -------------------- \n";
