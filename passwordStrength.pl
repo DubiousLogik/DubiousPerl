@@ -4,8 +4,8 @@
 # robbie devine
 
 my $programName = "passwordStrength.pl v2.3";
-
 print "\nStarting $programName --------------------------------------------\n\n";
+
 my $password = $ARGV[0];  #input param
 my $ok = 1;
 
@@ -17,6 +17,7 @@ if ($password !~ m/[a-z]/)  { print "password must contain lower case letters\n"
 if ($password !~ m/[0-9]/)  { print "password must contain numbers\n"; $ok=0; }
 if ($password !~ m/[!@#\$%^&*()_\-\[\]\'\"]/) { print "password must contain special characters\n"; $ok=0; }
 if ($password =~ /(\S)(?=\1{2})/) { print "password cannot contain 3 or more identical characters in a row\n"; $ok=0; }
+if ($password =~ /password/i) { print "password cannot contain the string 'password'"; $ok=0; }
 
 if ($ok) { print "\nPassword is ok\n"; }
 else { print "\nErrors found\n"; }
