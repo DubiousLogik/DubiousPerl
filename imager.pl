@@ -4,15 +4,23 @@
 # creates resized (smaller) copies for web
 
 use Image::Magick;
+my $program = "imager.pl v2.4";
+print "Starting $program -------------------------\n\n";
 
-my $program = "imager.pl v2.2";
+my $trgWidth;
+if ( ($ARGV[0] == "") || ($ARGV[0] =~ m/\D/) ) {
+	print "Usage:  \">imager.pl N\" where N is the target width in pixels\n";
+	die "\n\n[perl code]: I can't go on like this, I need an integer, not [$ARGV[0]]\n\n";
+} else {
+	$trgWidth = $ARGV[0];
+}
+
+
 my $srcDir = "C:\\Users\\rdevine\\Desktop\\temp\\";
 my $trgDir = "C:\\Users\\rdevine\\Desktop\\temp\\small\\";
 my $imgCount = 0;
-my $trgWidth = 900;  #target width of image, in pixels
 my $scaleRatio = 1.0;
 
-print "Starting $program -------------------------\n\n";
 
 while(my $srcImg = glob($srcDir."*.jpg")) {
 
