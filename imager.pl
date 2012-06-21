@@ -15,12 +15,10 @@ if ( ($ARGV[0] == "") || ($ARGV[0] =~ m/\D/) ) {
 	$trgWidth = $ARGV[0];
 }
 
-
 my $srcDir = "C:\\Users\\rdevine\\Desktop\\temp\\";
 my $trgDir = "C:\\Users\\rdevine\\Desktop\\temp\\small\\";
 my $imgCount = 0;
 my $scaleRatio = 1.0;
-
 
 while(my $srcImg = glob($srcDir."*.jpg")) {
 
@@ -38,9 +36,6 @@ while(my $srcImg = glob($srcDir."*.jpg")) {
 	#$image->Scale('50%');  #force a fixed scale ratio
 	#$image->Scale(width=>'100');  #force a width, note - does not maintain aspect ratio
 
-	#for this version I'm setting a default width of 900px for the blog
-	#this approximates a 4x6 photo, landscape orientation; photos in portrait orientation 
-	#may or may not be scaled
 	my $srcWidth = $image->Get('width');
 	if ($srcWidth > $trgWidth) { 
 		$scaleRatio = $trgWidth/$srcWidth;
