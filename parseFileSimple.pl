@@ -11,8 +11,8 @@ my $foundCount = 0;
 
 open(SRC, "<$filename");
 while (defined ($_ = <SRC>)) {
-	my ($match) = /\"Xap\.([\w]+)\"/; #puts $1 into $match variable
-	if ($match =~ /Ad/) { 
+	my ($match) = /\"String1\.([\w]+)\"/; #puts $1 into $match variable
+	if ($match =~ /String2/) { 
 		print "\t$match\n"; 
 		$foundCount++;
 	}
