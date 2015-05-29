@@ -1,7 +1,12 @@
-# --------------------------------------------------------------------------------------------
 #!/usr/bin/perl
 
-print "Starting ParseRESX.pl ----------------------------------------------\n";
+# --------------------------------------------------------------------------------------------
+# ParseChangeLineBreaks.pl
+# Parses data without invoking xml nor other node based parsers; 
+# flattens data to 1 row, then re-adds line breaks where you want 
+# them, permitting simple 'single-row' based parsing for string matches.
+
+print "Starting ParseChangeLineBreaks.pl ----------------------------------------------\n";
 
 # constants
 my $file1 = "strings.resx";
